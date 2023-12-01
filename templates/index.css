@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    background-color: black;
+}
+body{
+    box-sizing: border-box;
+}
+.navbar{
+    position: sticky;
+}
+
+#logo-img{
+    width: 65px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+
+.nav-item{
+    /* display: flex;
+    justify-content:end; */
+}
+
+/* 1St container  */
+.container{
+    display: flex;
+    align-items: center;
+}
+.container img {
+    height: 100%;
+    width: 100%;
+  }
+  
+.img-div{
+    width: 40%;
+}
+.about{
+    width: 60%;
+}
+
+/* Skills cotainer---------------------------- */
+.skill-container{
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+}
+.skill-container button{
+    padding: 7px;
+    margin-top: 15px;
+    width: 100px;
+    cursor:pointer;
+}
+
+/* Projects Div Started----------------------- */
+.project_container{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.r1,.r2{
+    margin: 25px 0px;
+    /* border: 2px solid grey; */
+
+}
+
+.p1,.p3{
+    /* color: rgb(34, 34, 34); */
+}
+.p2{
+    /* background: red; */
+}
+
+/* Media Query CSS-------------------------------------- */
+
+@media screen and (max-width: 480px) {
+    
+    .container{
+        flex-direction: column;
+
+    }
+
+    .project_container{
+        display: flex;
+    }
+    .r1,.r2{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid greenyellow;
+
+    }
+    .p1,.p2,.p3{
+        width: 100%;
+        border: 1px solid greenyellow;
+    }
+  }
