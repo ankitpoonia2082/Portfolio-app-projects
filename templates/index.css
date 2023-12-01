@@ -13,7 +13,7 @@ body{
 
 #logo-img{
     width: 65px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid;
     border-radius: 50%;
 }
 .navbar-nav{
@@ -43,58 +43,81 @@ body{
 }
 
 /* Skills cotainer---------------------------- */
-.skill-container{
-    border: 1px solid gray;
-    padding: 20px;
+.skills{
+    border: 1px solid rgb(172, 0, 0);
     margin: 20px;
+    padding: 20px;
 }
-.skill-container button{
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.skill-container h5{
+    text-align: center;
     padding: 7px;
-    margin-top: 15px;
-    width: 100px;
-    cursor:pointer;
+    margin: 15px;
+    max-width: 120px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 /* Projects Div Started----------------------- */
 .project_container{
     margin: 25px;
-    display: flex;
-    flex-direction: column;
+}
+.card{
+    height: 300px;
 }
 
 .r1,.r2{
-    margin: 25px 0px;
+    margin: 25px;
     /* border: 2px solid grey; */
 
 }
 
-.p1,.p3{
-    /* color: rgb(34, 34, 34); */
+/* Contact form CSS---------- */
+.contact-container{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
 }
-.p2{
-    /* background: red; */
+.contact-container form{
+    width: 60%; 
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.footer{
+    border: 1px solid red;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px;
+}
+.footer h3{
+    color: red;
 }
 
 /* Media Query CSS-------------------------------------- */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     
     .container{
         flex-direction: column;
 
     }
-
-    .project_container{
-        display: flex;
+    .card{
+        margin-top: 15px;
     }
-    .r1,.r2{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid greenyellow;
 
-    }
-    .p1,.p2,.p3{
-        width: 100%;
-        border: 1px solid greenyellow;
+
+
+    .skill-container{
+        /* flex-direction: column; */
     }
   }
