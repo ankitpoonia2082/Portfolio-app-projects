@@ -3,7 +3,7 @@
 const express = require('express')
 const app = express()
 
-const {connectToDb,getDb} = require("./db")
+require("./db")
 
 // Creating requist on port 3000--->
 const port = 3000;
