@@ -19,12 +19,6 @@ body{
 .navbar-nav{
     margin-left: auto;
 }
-
-.nav-item{
-    /* display: flex;
-    justify-content:end; */
-}
-
 /* 1St container  */
 .container{
     display: flex;
@@ -105,16 +99,26 @@ body{
     padding: 20px;
 }
 .details{
+    display: flex;
+    flex-direction: column;
     border-left: 1px solid gray;
     width: 20%;
 }
-.details button{
+.details a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
     margin: 20px;
     padding: 10px;
     width: 90%;
     border: none;
     border-radius: 10px;
     background-color: red;
+}
+.details a:hover{
+    background-color: rgb(192, 19, 19);
+    color: white;
+    text-decoration: underline;
 }
 
 .footer{

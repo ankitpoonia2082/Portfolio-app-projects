@@ -2,15 +2,20 @@
 
 const mongoose = require('mongoose')
 
+// uri(Uniform resource indicator) = Connection String
+const uri = "mongodb://localhost:27017/portfolio";
 
-// Connection String
-const uri = "mongodb://localhost:27017/portfolio/users";
+const connectDB = async () => {
+    try {
+      const conn = await mongoose.connect(uri);
+      console.log(`MongoDB Connected`);
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
 
-mongoose.connect(uri)
-.then(()=>{
-    console.log("db Connected")
-})
-.catch((err)=>console.log(err))
+  module.exports = connectDB
+
 
 
 
